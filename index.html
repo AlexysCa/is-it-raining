@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Weather DashBoard</title>
+
+        <!--insert link for stylesheets-->
+
+    </head>
+    <body>
+        <!--Dashboard header-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+               <h1 class="display-5 text-center">Need To Check The Weather?</h1> 
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-3 searchCol">
+        <!--Search section-->
+                <h2>Enter A City Name:</h2>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="userCityInput" placeholder="City Name">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-primary" type="button" id="searchBtn"></button>
+                            </div>
+                    </div>
+        <!--Section that holds list of cities-->
+                        <div class="list-group" id="cityList"></div>
+                </div>
+        <!--Section holds cities weather-->
+                <div class="col-9">
+                    <div class="card" style="width: 100%;" id="currentWeather"></div>
+                    <div id="forecastWeather"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--insert js script here-->
+    </body>
+</html>
